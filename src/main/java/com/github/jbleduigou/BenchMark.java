@@ -19,31 +19,51 @@ import java.util.concurrent.TimeUnit;
 import static org.apache.commons.lang3.RandomStringUtils.randomAlphabetic;
 
 public class BenchMark {
-
+  
   @State(Scope.Benchmark)
   public static class ExecutionPlan {
     
     public List<String> items = new ArrayList<>();
-
-    @Param({ "1000", "5000", "10000" })
+    
+    @Param({"10", "50", "1000", "5000", "10000"})
     public int sizeOfList;
-
+    
     @Setup(Level.Iteration)
     public void setUp() {
       items.clear();
-      for (int i = 0 ; i < sizeOfList ; i++) {
-         items.add(randomAlphabetic(16));
+      for (int i = 0; i < sizeOfList; i++) {
+        items.add(randomAlphabetic(16));
       }
-      System.out.println(items.size());
     }
   }
-
+  
   @Benchmark
-  @BenchmarkMode(Mode.AverageTime)
-  @Warmup(iterations = 1, time = 1, timeUnit = TimeUnit.SECONDS)
-  @Measurement(iterations = 1, time = 1, timeUnit = TimeUnit.SECONDS)
-  public void collectionSort(ExecutionPlan plan) {
+  @BenchmarkMode(Mode.SampleTime)
+  @Warmup(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
+  @Measurement(iterations = 5, time = 10, timeUnit = TimeUnit.SECONDS)
+  public void mergeSort(ExecutionPlan plan) {
     Collections.sort(plan.items);
   }
   
+  @Benchmark
+  @BenchmarkMode(Mode.SampleTime)
+  @Warmup(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
+  @Measurement(iterations = 5, time = 10, timeUnit = TimeUnit.SECONDS)
+  public void bubleSort(ExecutionPlan plan) {
+    bubbleSort(plan.items);
+  }
+  
+  public static void bubbleSort(List<String> list) {
+    int n = list.size();
+    String temp;
+    for (int i = 0; i < n - 1; i++) {
+      for (int j = 0; j < (n - i - 1); j++) {
+        if (list.get(j).compareTo(list.get(j + 1)) > 0) {
+          temp = list.get(j);
+          list.set(j, list.get(j + 1));
+          list.set(j + 1, temp);
+        }
+      }
+    }
+  }
 }
