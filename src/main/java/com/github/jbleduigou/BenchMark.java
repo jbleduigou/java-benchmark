@@ -25,7 +25,7 @@ public class BenchMark {
     
     public List<String> items = new ArrayList<>();
     
-    @Param({"10", "100", "10000", "1000000"})
+    @Param({"10", "100", "1000", "10000", "100000"})
     public int sizeOfList;
     
     @Setup(Level.Iteration)
@@ -39,16 +39,16 @@ public class BenchMark {
   
   @Benchmark
   @BenchmarkMode(Mode.AverageTime)
-  @Warmup(iterations = 2, time = 10, timeUnit = TimeUnit.SECONDS)
-  @Measurement(iterations = 5, time = 10, timeUnit = TimeUnit.SECONDS)
+  @Warmup(iterations = 5, time = 30, timeUnit = TimeUnit.SECONDS)
+  @Measurement(iterations = 10, time = 1, timeUnit = TimeUnit.MINUTES)
   public void mergeSort(ExecutionPlan plan) {
     Collections.sort(plan.items);
   }
   
   @Benchmark
   @BenchmarkMode(Mode.AverageTime)
-  @Warmup(iterations = 2, time = 10, timeUnit = TimeUnit.SECONDS)
-  @Measurement(iterations = 5, time = 10, timeUnit = TimeUnit.SECONDS)
+  @Warmup(iterations = 5, time = 30, timeUnit = TimeUnit.SECONDS)
+  @Measurement(iterations = 10, time = 1, timeUnit = TimeUnit.MINUTES)
   public void bubbleSort(ExecutionPlan plan) {
     bubbleSort(plan.items);
   }
