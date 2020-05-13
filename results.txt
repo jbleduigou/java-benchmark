@@ -1,0 +1,1105 @@
+/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java -Dfile.encoding=UTF-8 -classpath /Users/jbleduigou/workspace/java-benchmark/target/classes:/Users/jbleduigou/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar:/Users/jbleduigou/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/jbleduigou/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/jbleduigou/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.23/jmh-generator-annprocess-1.23.jar:/Users/jbleduigou/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar com.github.jbleduigou.BenchmarkRunner
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/Users/jbleduigou/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar) to field java.io.PrintStream.charOut
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 30 s each
+# Measurement: 10 iterations, 1 min each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.github.jbleduigou.BenchMark.bubbleSort
+# Parameters: (sizeOfList = 10)
+
+# Run progress: 0.00% complete, ETA 10:25:00
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   6: ≈ 10⁻⁷ s/op
+Iteration   7: ≈ 10⁻⁷ s/op
+Iteration   8: ≈ 10⁻⁷ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+# Run progress: 2.00% complete, ETA 10:13:32
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+# Run progress: 4.00% complete, ETA 10:03:12
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁷ s/op
+
+# Run progress: 6.00% complete, ETA 09:51:11
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+# Run progress: 8.00% complete, ETA 09:38:50
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+
+Result "com.github.jbleduigou.BenchMark.bubbleSort":
+  ≈ 10⁻⁶ s/op
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 30 s each
+# Measurement: 10 iterations, 1 min each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.github.jbleduigou.BenchMark.bubbleSort
+# Parameters: (sizeOfList = 100)
+
+# Run progress: 10.00% complete, ETA 09:26:32
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   6: ≈ 10⁻⁴ s/op
+Iteration   7: ≈ 10⁻⁴ s/op
+Iteration   8: ≈ 10⁻⁴ s/op
+Iteration   9: ≈ 10⁻⁴ s/op
+Iteration  10: ≈ 10⁻⁴ s/op
+
+# Run progress: 12.00% complete, ETA 09:14:00
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   6: ≈ 10⁻⁴ s/op
+Iteration   7: ≈ 10⁻⁴ s/op
+Iteration   8: ≈ 10⁻⁴ s/op
+Iteration   9: ≈ 10⁻⁴ s/op
+Iteration  10: ≈ 10⁻⁴ s/op
+
+# Run progress: 14.00% complete, ETA 09:01:31
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   6: ≈ 10⁻⁴ s/op
+Iteration   7: ≈ 10⁻⁴ s/op
+Iteration   8: ≈ 10⁻⁴ s/op
+Iteration   9: ≈ 10⁻⁴ s/op
+Iteration  10: ≈ 10⁻⁴ s/op
+
+# Run progress: 16.00% complete, ETA 08:48:56
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   6: ≈ 10⁻⁴ s/op
+Iteration   7: ≈ 10⁻⁴ s/op
+Iteration   8: ≈ 10⁻⁴ s/op
+Iteration   9: ≈ 10⁻⁴ s/op
+Iteration  10: ≈ 10⁻⁴ s/op
+
+# Run progress: 18.00% complete, ETA 08:36:22
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   6: ≈ 10⁻⁴ s/op
+Iteration   7: ≈ 10⁻⁴ s/op
+Iteration   8: ≈ 10⁻⁴ s/op
+Iteration   9: ≈ 10⁻⁴ s/op
+Iteration  10: ≈ 10⁻⁴ s/op
+
+
+Result "com.github.jbleduigou.BenchMark.bubbleSort":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 30 s each
+# Measurement: 10 iterations, 1 min each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.github.jbleduigou.BenchMark.bubbleSort
+# Parameters: (sizeOfList = 1000)
+
+# Run progress: 20.00% complete, ETA 08:23:47
+# Fork: 1 of 5
+# Warmup Iteration   1: 0.005 s/op
+# Warmup Iteration   2: 0.005 s/op
+# Warmup Iteration   3: 0.005 s/op
+# Warmup Iteration   4: 0.005 s/op
+# Warmup Iteration   5: 0.005 s/op
+Iteration   1: 0.005 s/op
+Iteration   2: 0.005 s/op
+Iteration   3: 0.005 s/op
+Iteration   4: 0.005 s/op
+Iteration   5: 0.009 s/op
+Iteration   6: 0.014 s/op
+Iteration   7: 0.014 s/op
+Iteration   8: 0.012 s/op
+Iteration   9: 0.011 s/op
+Iteration  10: 0.010 s/op
+
+# Run progress: 22.00% complete, ETA 08:11:13
+# Fork: 2 of 5
+# Warmup Iteration   1: 0.010 s/op
+# Warmup Iteration   2: 0.012 s/op
+# Warmup Iteration   3: 0.009 s/op
+# Warmup Iteration   4: 0.010 s/op
+# Warmup Iteration   5: 0.010 s/op
+Iteration   1: 0.010 s/op
+Iteration   2: 0.010 s/op
+Iteration   3: 0.010 s/op
+Iteration   4: 0.009 s/op
+Iteration   5: 0.010 s/op
+Iteration   6: 0.010 s/op
+Iteration   7: 0.010 s/op
+Iteration   8: 0.011 s/op
+Iteration   9: 0.010 s/op
+Iteration  10: 0.010 s/op
+
+# Run progress: 24.00% complete, ETA 07:58:39
+# Fork: 3 of 5
+# Warmup Iteration   1: 0.010 s/op
+# Warmup Iteration   2: 0.012 s/op
+# Warmup Iteration   3: 0.010 s/op
+# Warmup Iteration   4: 0.010 s/op
+# Warmup Iteration   5: 0.010 s/op
+Iteration   1: 0.010 s/op
+Iteration   2: 0.010 s/op
+Iteration   3: 0.010 s/op
+Iteration   4: 0.011 s/op
+Iteration   5: 0.010 s/op
+Iteration   6: 0.010 s/op
+Iteration   7: 0.010 s/op
+Iteration   8: 0.010 s/op
+Iteration   9: 0.011 s/op
+Iteration  10: 0.011 s/op
+
+# Run progress: 26.00% complete, ETA 07:46:05
+# Fork: 4 of 5
+# Warmup Iteration   1: 0.009 s/op
+# Warmup Iteration   2: 0.010 s/op
+# Warmup Iteration   3: 0.011 s/op
+# Warmup Iteration   4: 0.010 s/op
+# Warmup Iteration   5: 0.011 s/op
+Iteration   1: 0.011 s/op
+Iteration   2: 0.011 s/op
+Iteration   3: 0.010 s/op
+Iteration   4: 0.012 s/op
+Iteration   5: 0.012 s/op
+Iteration   6: 0.011 s/op
+Iteration   7: 0.011 s/op
+Iteration   8: 0.012 s/op
+Iteration   9: 0.011 s/op
+Iteration  10: 0.011 s/op
+
+# Run progress: 28.00% complete, ETA 07:33:31
+# Fork: 5 of 5
+# Warmup Iteration   1: 0.011 s/op
+# Warmup Iteration   2: 0.010 s/op
+# Warmup Iteration   3: 0.011 s/op
+# Warmup Iteration   4: 0.013 s/op
+# Warmup Iteration   5: 0.010 s/op
+Iteration   1: 0.011 s/op
+Iteration   2: 0.011 s/op
+Iteration   3: 0.010 s/op
+Iteration   4: 0.012 s/op
+Iteration   5: 0.011 s/op
+Iteration   6: 0.011 s/op
+Iteration   7: 0.013 s/op
+Iteration   8: 0.012 s/op
+Iteration   9: 0.010 s/op
+Iteration  10: 0.012 s/op
+
+
+Result "com.github.jbleduigou.BenchMark.bubbleSort":
+  0.010 ±(99.9%) 0.001 s/op [Average]
+  (min, avg, max) = (0.005, 0.010, 0.014), stdev = 0.002
+  CI (99.9%): [0.009, 0.011] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 30 s each
+# Measurement: 10 iterations, 1 min each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.github.jbleduigou.BenchMark.bubbleSort
+# Parameters: (sizeOfList = 10000)
+
+# Run progress: 30.00% complete, ETA 07:20:56
+# Fork: 1 of 5
+# Warmup Iteration   1: 1.322 s/op
+# Warmup Iteration   2: 1.185 s/op
+# Warmup Iteration   3: 1.373 s/op
+# Warmup Iteration   4: 1.438 s/op
+# Warmup Iteration   5: 1.319 s/op
+Iteration   1: 1.420 s/op
+Iteration   2: 1.469 s/op
+Iteration   3: 1.381 s/op
+Iteration   4: 1.383 s/op
+Iteration   5: 1.427 s/op
+Iteration   6: 1.317 s/op
+Iteration   7: 1.375 s/op
+Iteration   8: 1.283 s/op
+Iteration   9: 1.441 s/op
+Iteration  10: 1.400 s/op
+
+# Run progress: 32.00% complete, ETA 07:08:50
+# Fork: 2 of 5
+# Warmup Iteration   1: 1.405 s/op
+# Warmup Iteration   2: 1.355 s/op
+# Warmup Iteration   3: 1.328 s/op
+# Warmup Iteration   4: 1.263 s/op
+# Warmup Iteration   5: 1.368 s/op
+Iteration   1: 1.324 s/op
+Iteration   2: 1.480 s/op
+Iteration   3: 1.372 s/op
+Iteration   4: 1.421 s/op
+Iteration   5: 1.335 s/op
+Iteration   6: 1.338 s/op
+Iteration   7: 1.415 s/op
+Iteration   8: 1.311 s/op
+Iteration   9: 1.336 s/op
+Iteration  10: 1.254 s/op
+
+# Run progress: 34.00% complete, ETA 06:56:29
+# Fork: 3 of 5
+# Warmup Iteration   1: 1.394 s/op
+# Warmup Iteration   2: 1.311 s/op
+# Warmup Iteration   3: 1.347 s/op
+# Warmup Iteration   4: 1.310 s/op
+# Warmup Iteration   5: 1.398 s/op
+Iteration   1: 1.301 s/op
+Iteration   2: 1.362 s/op
+Iteration   3: 1.272 s/op
+Iteration   4: 1.308 s/op
+Iteration   5: 1.251 s/op
+Iteration   6: 1.324 s/op
+Iteration   7: 1.305 s/op
+Iteration   8: 1.290 s/op
+Iteration   9: 1.330 s/op
+Iteration  10: 1.185 s/op
+
+# Run progress: 36.00% complete, ETA 06:44:10
+# Fork: 4 of 5
+# Warmup Iteration   1: 1.463 s/op
+# Warmup Iteration   2: 1.305 s/op
+# Warmup Iteration   3: 1.183 s/op
+# Warmup Iteration   4: 1.379 s/op
+# Warmup Iteration   5: 1.345 s/op
+Iteration   1: 1.243 s/op
+Iteration   2: 1.443 s/op
+Iteration   3: 1.337 s/op
+Iteration   4: 1.393 s/op
+Iteration   5: 1.323 s/op
+Iteration   6: 1.264 s/op
+Iteration   7: 1.443 s/op
+Iteration   8: 1.275 s/op
+Iteration   9: 1.324 s/op
+Iteration  10: 1.337 s/op
+
+# Run progress: 38.00% complete, ETA 06:31:47
+# Fork: 5 of 5
+# Warmup Iteration   1: 1.446 s/op
+# Warmup Iteration   2: 1.173 s/op
+# Warmup Iteration   3: 1.407 s/op
+# Warmup Iteration   4: 1.147 s/op
+# Warmup Iteration   5: 1.264 s/op
+Iteration   1: 1.327 s/op
+Iteration   2: 1.286 s/op
+Iteration   3: 1.350 s/op
+Iteration   4: 1.243 s/op
+Iteration   5: 1.341 s/op
+Iteration   6: 1.261 s/op
+Iteration   7: 1.269 s/op
+Iteration   8: 1.205 s/op
+Iteration   9: 1.307 s/op
+Iteration  10: 1.354 s/op
+
+
+Result "com.github.jbleduigou.BenchMark.bubbleSort":
+  1.335 ±(99.9%) 0.033 s/op [Average]
+  (min, avg, max) = (1.185, 1.335, 1.480), stdev = 0.068
+  CI (99.9%): [1.301, 1.368] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 30 s each
+# Measurement: 10 iterations, 1 min each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.github.jbleduigou.BenchMark.bubbleSort
+# Parameters: (sizeOfList = 100000)
+
+# Run progress: 40.00% complete, ETA 06:19:25
+# Fork: 1 of 5
+# Warmup Iteration   1: 200.960 s/op
+# Warmup Iteration   2: 198.886 s/op
+# Warmup Iteration   3: 197.955 s/op
+# Warmup Iteration   4: 209.114 s/op
+# Warmup Iteration   5: 211.593 s/op
+Iteration   1: 208.123 s/op
+Iteration   2: 209.222 s/op
+Iteration   3: 208.328 s/op
+Iteration   4: 211.536 s/op
+Iteration   5: 200.763 s/op
+Iteration   6: 210.355 s/op
+Iteration   7: 203.267 s/op
+Iteration   8: 208.209 s/op
+Iteration   9: 210.639 s/op
+Iteration  10: 201.887 s/op
+
+# Run progress: 42.00% complete, ETA 07:00:38
+# Fork: 2 of 5
+# Warmup Iteration   1: 217.842 s/op
+# Warmup Iteration   2: 200.486 s/op
+# Warmup Iteration   3: 199.505 s/op
+# Warmup Iteration   4: 196.265 s/op
+# Warmup Iteration   5: 201.494 s/op
+Iteration   1: 194.347 s/op
+Iteration   2: 199.185 s/op
+Iteration   3: 193.598 s/op
+Iteration   4: 188.035 s/op
+Iteration   5: 193.309 s/op
+Iteration   6: 190.387 s/op
+Iteration   7: 182.266 s/op
+Iteration   8: 184.539 s/op
+Iteration   9: 185.766 s/op
+Iteration  10: 183.690 s/op
+
+# Run progress: 44.00% complete, ETA 07:29:34
+# Fork: 3 of 5
+# Warmup Iteration   1: 209.242 s/op
+# Warmup Iteration   2: 172.366 s/op
+# Warmup Iteration   3: 185.538 s/op
+# Warmup Iteration   4: 182.794 s/op
+# Warmup Iteration   5: 181.091 s/op
+Iteration   1: 185.663 s/op
+Iteration   2: 175.937 s/op
+Iteration   3: 181.394 s/op
+Iteration   4: 174.826 s/op
+Iteration   5: 180.841 s/op
+Iteration   6: 180.827 s/op
+Iteration   7: 177.290 s/op
+Iteration   8: 175.303 s/op
+Iteration   9: 174.153 s/op
+Iteration  10: 176.376 s/op
+
+# Run progress: 46.00% complete, ETA 07:47:54
+# Fork: 4 of 5
+# Warmup Iteration   1: 182.733 s/op
+# Warmup Iteration   2: 166.785 s/op
+# Warmup Iteration   3: 168.647 s/op
+# Warmup Iteration   4: 172.644 s/op
+# Warmup Iteration   5: 168.756 s/op
+Iteration   1: 167.648 s/op
+Iteration   2: 171.687 s/op
+Iteration   3: 167.711 s/op
+Iteration   4: 167.807 s/op
+Iteration   5: 171.099 s/op
+Iteration   6: 165.436 s/op
+Iteration   7: 165.580 s/op
+Iteration   8: 173.790 s/op
+Iteration   9: 169.242 s/op
+Iteration  10: 165.666 s/op
+
+# Run progress: 48.00% complete, ETA 07:57:54
+# Fork: 5 of 5
+# Warmup Iteration   1: 173.751 s/op
+# Warmup Iteration   2: 164.569 s/op
+# Warmup Iteration   3: 170.983 s/op
+# Warmup Iteration   4: 174.386 s/op
+# Warmup Iteration   5: 168.331 s/op
+Iteration   1: 166.261 s/op
+Iteration   2: 161.978 s/op
+Iteration   3: 168.430 s/op
+Iteration   4: 167.789 s/op
+Iteration   5: 172.501 s/op
+Iteration   6: 160.409 s/op
+Iteration   7: 165.281 s/op
+Iteration   8: 168.131 s/op
+Iteration   9: 166.072 s/op
+Iteration  10: 169.044 s/op
+
+
+Result "com.github.jbleduigou.BenchMark.bubbleSort":
+  182.032 ±(99.9%) 7.736 s/op [Average]
+  (min, avg, max) = (160.409, 182.032, 211.536), stdev = 15.628
+  CI (99.9%): [174.296, 189.769] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 30 s each
+# Measurement: 10 iterations, 1 min each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.github.jbleduigou.BenchMark.mergeSort
+# Parameters: (sizeOfList = 10)
+
+# Run progress: 50.00% complete, ETA 08:03:13
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   6: ≈ 10⁻⁷ s/op
+Iteration   7: ≈ 10⁻⁷ s/op
+Iteration   8: ≈ 10⁻⁷ s/op
+Iteration   9: ≈ 10⁻⁷ s/op
+Iteration  10: ≈ 10⁻⁷ s/op
+
+# Run progress: 52.00% complete, ETA 07:37:41
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   6: ≈ 10⁻⁷ s/op
+Iteration   7: ≈ 10⁻⁷ s/op
+Iteration   8: ≈ 10⁻⁷ s/op
+Iteration   9: ≈ 10⁻⁷ s/op
+Iteration  10: ≈ 10⁻⁷ s/op
+
+# Run progress: 54.00% complete, ETA 07:13:07
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   6: ≈ 10⁻⁷ s/op
+Iteration   7: ≈ 10⁻⁷ s/op
+Iteration   8: ≈ 10⁻⁷ s/op
+Iteration   9: ≈ 10⁻⁷ s/op
+Iteration  10: ≈ 10⁻⁷ s/op
+
+# Run progress: 56.00% complete, ETA 06:49:24
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   6: ≈ 10⁻⁷ s/op
+Iteration   7: ≈ 10⁻⁷ s/op
+Iteration   8: ≈ 10⁻⁷ s/op
+Iteration   9: ≈ 10⁻⁷ s/op
+Iteration  10: ≈ 10⁻⁷ s/op
+
+# Run progress: 58.00% complete, ETA 06:26:26
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   6: ≈ 10⁻⁷ s/op
+Iteration   7: ≈ 10⁻⁷ s/op
+Iteration   8: ≈ 10⁻⁷ s/op
+Iteration   9: ≈ 10⁻⁷ s/op
+Iteration  10: ≈ 10⁻⁷ s/op
+
+
+Result "com.github.jbleduigou.BenchMark.mergeSort":
+  ≈ 10⁻⁷ s/op
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 30 s each
+# Measurement: 10 iterations, 1 min each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.github.jbleduigou.BenchMark.mergeSort
+# Parameters: (sizeOfList = 100)
+
+# Run progress: 60.00% complete, ETA 06:04:10
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+# Run progress: 62.00% complete, ETA 05:42:31
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+# Run progress: 64.00% complete, ETA 05:21:27
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+# Run progress: 66.00% complete, ETA 05:00:53
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+# Run progress: 68.00% complete, ETA 04:40:47
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+
+Result "com.github.jbleduigou.BenchMark.mergeSort":
+  ≈ 10⁻⁶ s/op
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 30 s each
+# Measurement: 10 iterations, 1 min each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.github.jbleduigou.BenchMark.mergeSort
+# Parameters: (sizeOfList = 1000)
+
+# Run progress: 70.00% complete, ETA 04:21:07
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   6: ≈ 10⁻⁵ s/op
+Iteration   7: ≈ 10⁻⁵ s/op
+Iteration   8: ≈ 10⁻⁵ s/op
+Iteration   9: ≈ 10⁻⁵ s/op
+Iteration  10: ≈ 10⁻⁵ s/op
+
+# Run progress: 72.00% complete, ETA 04:01:50
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   6: ≈ 10⁻⁵ s/op
+Iteration   7: ≈ 10⁻⁵ s/op
+Iteration   8: ≈ 10⁻⁵ s/op
+Iteration   9: ≈ 10⁻⁵ s/op
+Iteration  10: ≈ 10⁻⁵ s/op
+
+# Run progress: 74.00% complete, ETA 03:42:55
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   6: ≈ 10⁻⁵ s/op
+Iteration   7: ≈ 10⁻⁵ s/op
+Iteration   8: ≈ 10⁻⁵ s/op
+Iteration   9: ≈ 10⁻⁵ s/op
+Iteration  10: ≈ 10⁻⁵ s/op
+
+# Run progress: 76.00% complete, ETA 03:24:20
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   6: ≈ 10⁻⁵ s/op
+Iteration   7: ≈ 10⁻⁵ s/op
+Iteration   8: ≈ 10⁻⁵ s/op
+Iteration   9: ≈ 10⁻⁵ s/op
+Iteration  10: ≈ 10⁻⁵ s/op
+
+# Run progress: 78.00% complete, ETA 03:06:04
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+# Warmup Iteration   2: ≈ 10⁻⁵ s/op
+# Warmup Iteration   3: ≈ 10⁻⁵ s/op
+# Warmup Iteration   4: ≈ 10⁻⁵ s/op
+# Warmup Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   6: ≈ 10⁻⁵ s/op
+Iteration   7: ≈ 10⁻⁵ s/op
+Iteration   8: ≈ 10⁻⁵ s/op
+Iteration   9: ≈ 10⁻⁵ s/op
+Iteration  10: ≈ 10⁻⁵ s/op
+
+
+Result "com.github.jbleduigou.BenchMark.mergeSort":
+  ≈ 10⁻⁵ s/op
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 30 s each
+# Measurement: 10 iterations, 1 min each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.github.jbleduigou.BenchMark.mergeSort
+# Parameters: (sizeOfList = 10000)
+
+# Run progress: 80.00% complete, ETA 02:48:04
+# Fork: 1 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   6: ≈ 10⁻⁴ s/op
+Iteration   7: ≈ 10⁻⁴ s/op
+Iteration   8: ≈ 10⁻⁴ s/op
+Iteration   9: ≈ 10⁻⁴ s/op
+Iteration  10: ≈ 10⁻⁴ s/op
+
+# Run progress: 82.00% complete, ETA 02:30:20
+# Fork: 2 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   6: ≈ 10⁻⁴ s/op
+Iteration   7: ≈ 10⁻⁴ s/op
+Iteration   8: ≈ 10⁻⁴ s/op
+Iteration   9: ≈ 10⁻⁴ s/op
+Iteration  10: ≈ 10⁻⁴ s/op
+
+# Run progress: 84.00% complete, ETA 02:12:51
+# Fork: 3 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   6: ≈ 10⁻⁴ s/op
+Iteration   7: ≈ 10⁻⁴ s/op
+Iteration   8: ≈ 10⁻⁴ s/op
+Iteration   9: ≈ 10⁻⁴ s/op
+Iteration  10: ≈ 10⁻⁴ s/op
+
+# Run progress: 86.00% complete, ETA 01:55:36
+# Fork: 4 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   6: ≈ 10⁻⁴ s/op
+Iteration   7: ≈ 10⁻⁴ s/op
+Iteration   8: ≈ 10⁻⁴ s/op
+Iteration   9: ≈ 10⁻⁴ s/op
+Iteration  10: ≈ 10⁻⁴ s/op
+
+# Run progress: 88.00% complete, ETA 01:38:33
+# Fork: 5 of 5
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+# Warmup Iteration   2: ≈ 10⁻⁴ s/op
+# Warmup Iteration   3: ≈ 10⁻⁴ s/op
+# Warmup Iteration   4: ≈ 10⁻⁴ s/op
+# Warmup Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+Iteration   6: ≈ 10⁻⁴ s/op
+Iteration   7: ≈ 10⁻⁴ s/op
+Iteration   8: ≈ 10⁻⁴ s/op
+Iteration   9: ≈ 10⁻⁴ s/op
+Iteration  10: ≈ 10⁻⁴ s/op
+
+
+Result "com.github.jbleduigou.BenchMark.mergeSort":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 30 s each
+# Measurement: 10 iterations, 1 min each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.github.jbleduigou.BenchMark.mergeSort
+# Parameters: (sizeOfList = 100000)
+
+# Run progress: 90.00% complete, ETA 01:21:42
+# Fork: 1 of 5
+# Warmup Iteration   1: 0.002 s/op
+# Warmup Iteration   2: 0.002 s/op
+# Warmup Iteration   3: 0.003 s/op
+# Warmup Iteration   4: 0.003 s/op
+# Warmup Iteration   5: 0.004 s/op
+Iteration   1: 0.001 s/op
+Iteration   2: 0.003 s/op
+Iteration   3: 0.003 s/op
+Iteration   4: 0.002 s/op
+Iteration   5: 0.003 s/op
+Iteration   6: 0.003 s/op
+Iteration   7: 0.003 s/op
+Iteration   8: 0.001 s/op
+Iteration   9: 0.003 s/op
+Iteration  10: 0.003 s/op
+
+# Run progress: 92.00% complete, ETA 01:05:02
+# Fork: 2 of 5
+# Warmup Iteration   1: 0.001 s/op
+# Warmup Iteration   2: 0.003 s/op
+# Warmup Iteration   3: 0.003 s/op
+# Warmup Iteration   4: 0.003 s/op
+# Warmup Iteration   5: 0.003 s/op
+Iteration   1: 0.002 s/op
+Iteration   2: 0.003 s/op
+Iteration   3: 0.003 s/op
+Iteration   4: 0.003 s/op
+Iteration   5: 0.001 s/op
+Iteration   6: 0.003 s/op
+Iteration   7: 0.003 s/op
+Iteration   8: 0.001 s/op
+Iteration   9: 0.003 s/op
+Iteration  10: 0.003 s/op
+
+# Run progress: 94.00% complete, ETA 00:48:32
+# Fork: 3 of 5
+# Warmup Iteration   1: 0.001 s/op
+# Warmup Iteration   2: 0.003 s/op
+# Warmup Iteration   3: 0.003 s/op
+# Warmup Iteration   4: 0.002 s/op
+# Warmup Iteration   5: 0.003 s/op
+Iteration   1: 0.003 s/op
+Iteration   2: 0.003 s/op
+Iteration   3: 0.003 s/op
+Iteration   4: 0.002 s/op
+Iteration   5: 0.003 s/op
+Iteration   6: 0.003 s/op
+Iteration   7: 0.003 s/op
+Iteration   8: 0.003 s/op
+Iteration   9: 0.003 s/op
+Iteration  10: 0.003 s/op
+
+# Run progress: 96.00% complete, ETA 00:32:13
+# Fork: 4 of 5
+# Warmup Iteration   1: 0.001 s/op
+# Warmup Iteration   2: 0.003 s/op
+# Warmup Iteration   3: 0.003 s/op
+# Warmup Iteration   4: 0.001 s/op
+# Warmup Iteration   5: 0.003 s/op
+Iteration   1: 0.003 s/op
+Iteration   2: 0.003 s/op
+Iteration   3: 0.001 s/op
+Iteration   4: 0.003 s/op
+Iteration   5: 0.003 s/op
+Iteration   6: 0.003 s/op
+Iteration   7: 0.003 s/op
+Iteration   8: 0.003 s/op
+Iteration   9: 0.003 s/op
+Iteration  10: 0.003 s/op
+
+# Run progress: 98.00% complete, ETA 00:16:02
+# Fork: 5 of 5
+# Warmup Iteration   1: 0.002 s/op
+# Warmup Iteration   2: 0.002 s/op
+# Warmup Iteration   3: 0.003 s/op
+# Warmup Iteration   4: 0.002 s/op
+# Warmup Iteration   5: 0.003 s/op
+Iteration   1: 0.003 s/op
+Iteration   2: 0.003 s/op
+Iteration   3: 0.003 s/op
+Iteration   4: 0.001 s/op
+Iteration   5: 0.003 s/op
+Iteration   6: 0.003 s/op
+Iteration   7: 0.001 s/op
+Iteration   8: 0.003 s/op
+Iteration   9: 0.003 s/op
+Iteration  10: 0.001 s/op
+
+
+Result "com.github.jbleduigou.BenchMark.mergeSort":
+  0.003 ±(99.9%) 0.001 s/op [Average]
+  (min, avg, max) = (0.001, 0.003, 0.003), stdev = 0.001
+  CI (99.9%): [0.002, 0.003] (assumes normal distribution)
+
+
+# Run complete. Total time: 13:18:28
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark             (sizeOfList)  Mode  Cnt    Score    Error  Units
+BenchMark.bubbleSort            10  avgt   50   ≈ 10⁻⁶            s/op
+BenchMark.bubbleSort           100  avgt   50   ≈ 10⁻⁴            s/op
+BenchMark.bubbleSort          1000  avgt   50    0.010 ±  0.001   s/op
+BenchMark.bubbleSort         10000  avgt   50    1.335 ±  0.033   s/op
+BenchMark.bubbleSort        100000  avgt   50  182.032 ±  7.736   s/op
+BenchMark.mergeSort             10  avgt   50   ≈ 10⁻⁷            s/op
+BenchMark.mergeSort            100  avgt   50   ≈ 10⁻⁶            s/op
+BenchMark.mergeSort           1000  avgt   50   ≈ 10⁻⁵            s/op
+BenchMark.mergeSort          10000  avgt   50   ≈ 10⁻⁴            s/op
+BenchMark.mergeSort         100000  avgt   50    0.003 ±  0.001   s/op
+
+Process finished with exit code 0
